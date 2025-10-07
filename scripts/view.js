@@ -13,6 +13,8 @@ export function renderProductCard(product) {
   cardImage.src = product.thumbnail
   cardPrice.innerText = product.price
 
+  card.classList.add('card')
+
   // Append items in card
   card.appendChild(cardImage)
   card.appendChild(cardTitle)
