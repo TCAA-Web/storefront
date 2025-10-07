@@ -1,0 +1,31 @@
+@use './variables';
+@use './mixins';
+
+.header {
+  @include mixins.gridContainer(3, 1, variables.$spacing_md);
+  align-items: center;
+  justify-content: center;
+  padding: variables.$spacing_sm;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 2px 0px 7px rgba(44, 44, 44, 0.4);
+  border-bottom: solid 8px variables.$color_main_accent;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+  }
+  input {
+    height: 32px;
+  }
+  input:focus {
+    outline-color: variables.$color_main_accent;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}

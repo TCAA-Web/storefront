@@ -1,0 +1,12 @@
+@use './partials/fonts';
+@use './partials/header';
+@use './partials/card';
+@use './partials/productContainer';
+@use './partials/variables';
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: variables.$color_white;
+  @extend .zalando-sans-regular;
+}

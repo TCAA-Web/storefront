@@ -1,0 +1,17 @@
+@use '../partials/mixins';
+@use '../partials/variables';
+
+.card {
+  @include mixins.gridContainer(1, auto, 4px);
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 6px variables.$color_main_accent;
+  box-shadow: 4px 2px 8px rgba(44, 44, 44, 0.1);
+  p,
+  h2 {
+    margin: 2px 4px 2px 4px;
+  }
+  img {
+    width: 100%;
+  }
+}
