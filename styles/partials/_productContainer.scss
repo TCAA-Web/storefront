@@ -1,8 +1,9 @@
 @use '../partials/mixins';
+@use '../partials/variables';
 
 .productContainer {
-  width: 80%;
+  width: 60%;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: variables.$spacing_lg;
   @include mixins.gridContainer(3, 1, 8px);
 }

@@ -1,0 +1,30 @@
+@use './mixins';
+@use './variables';
+
+.productDetailsContainer {
+  @include mixins.gridContainer(1, 1, 8px);
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: variables.$spacing_lg;
+  padding: variables.$spacing_md;
+  border-radius: 4px;
+  box-shadow: 4px 2px 8px rgba(44, 44, 44, 0.1);
+
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin: auto;
+    }
+
+    button {
+      width: 64px;
+      margin: 4px;
+      padding: 4px;
+      cursor: pointer;
+    }
+  }
+}

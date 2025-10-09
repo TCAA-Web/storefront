@@ -1,0 +1,17 @@
+@use './variables';
+
+.buyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 32px;
+  background-color: variables.$color_white;
+  border: solid 2px variables.$color_alt_accent;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: variables.$color_alt_accent;
+  }
+}
